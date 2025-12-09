@@ -170,15 +170,12 @@ section:last-of-type {
 .projeto img {
   width: 100%;
   display: block;
-  aspect-ratio: 16 / 10;
-  object-fit: contain; /* Garante que a imagem inteira apareça sem cortes */
-  background-color: #f0f0f0; /* Adiciona um fundo claro para preencher o espaço vazio */
+  aspect-ratio: 16 / 10; /* Força a proporção do contêiner da imagem */
+  object-fit: cover; /* Faz a imagem preencher o espaço, cortando o excesso */
 }
 
 /* Ajusta o fundo da imagem para o tema escuro */
-.dark-mode .projeto img {
-  background-color: #2d3748; /* Um cinza escuro que combina com o tema */
-}
+.dark-mode .projeto img { }
 
 .projeto h3 {
   font-family: 'Poppins', sans-serif;
