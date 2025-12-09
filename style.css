@@ -283,7 +283,7 @@ footer {
     font-size: 2.25rem;
   }
   .projetos-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Layout flexível para tablets e maiores */
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); /* Permite que os cards sejam mais largos */
   }
 }
 
@@ -340,6 +340,6 @@ footer {
   }
 
   .projetos-grid {
-    grid-template-columns: repeat(2, 1fr); /* Garante duas colunas no desktop */
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); /* Mantém a flexibilidade para cards mais largos */
   }
 }
