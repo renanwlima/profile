@@ -11,7 +11,7 @@
 </head>
 <body class="dark-mode">
 
-  <button id="theme-toggle" title="Alternar tema">☀️</button>
+  <button id="theme-toggle" title="Alternar tema" aria-label="Alternar tema claro e escuro">☀️</button>
 
   <div class="page-wrapper">
     <!-- Barra Lateral Fixa -->
@@ -29,24 +29,30 @@
             <li><a href="#projetos">Projetos</a></li>
           </ul>
         </nav>
-        <div class="contact-links">
-          <a href="mailto:contatorenanw@gmail.com" title="Email">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            <span>contatorenanw@gmail.com</span>
-          </a>
-          <a href="https://www.linkedin.com/in/renanwlima" target="_blank" title="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            <span>linkedin.com/in/renanwlima</span>
-          </a>
-          <a href="https://wa.me/5542991193189" target="_blank" title="WhatsApp">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-            <span>+55 (42) 99119-3189</span>
-          </a>
-          <div class="contact-item" title="Localização">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-            <span>Curitiba, PR, Brasil</span>
-          </div>
-        </div>
+        <ul class="contact-links">
+          <li>
+            <a href="mailto:contatorenanw@gmail.com" title="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>contatorenanw@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/renanwlima" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <span>linkedin.com/in/renanwlima</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/5542991193189" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              <span>+55 (42) 99119-3189</span>
+            </a>
+          </li>
+          <li class="contact-item" title="Localização">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Curitiba, PR, Brasil</span>
+          </li>
+        </ul>
       </div>
     </aside>
 
@@ -57,8 +63,9 @@
   <section id="sobre" class="container">
     <h2>Sobre mim</h2>
     <p>
-      Profissional com formação técnica em Mecatrônica, complementada por cursos de Informática e Design Gráfico. No início da minha trajetória profissional, apliquei o conhecimento adquirido em cursos de aperfeiçoamento, desenvolvendo habilidades essenciais para minha atuação. No meu cargo atual, tenho ampliado minha expertise nas áreas de automação predial, sistemas de CFTV, controle de acesso e sistemas de detecção e alarme de incêndio.
-      Busco constantemente aprimorar meus conhecimentos e contribuir para o desenvolvimento de soluções inovadoras.
+      Profissional de automação com sólida formação técnica em Mecatrônica e, atualmente, expandindo minha atuação através da graduação em Análise e Desenvolvimento de Sistemas. Minha carreira é marcada pela busca contínua da integração entre hardware e software para criar soluções de automação predial mais eficientes e inteligentes.
+Minha trajetória profissional me proporcionou experiência consolidada em projetos de automação predial, onde sou responsável por garantir o funcionamento otimizado de sistemas de CFTV, controle de acesso e sistemas de detecção e alarme de incêndio (SDAI). Meu conhecimento prático é complementado por uma base em Informática e Design Gráfico, o que me confere uma visão ampla sobre a usabilidade e a interface das soluções que desenvolvo.
+Acredito que a combinação da minha expertise em mecatrônica com as novas habilidades em desenvolvimento de sistemas é meu grande diferencial. Essa visão integrada me permite não apenas implementar as tecnologias existentes, mas também arquitetar e desenvolver soluções futuras, preenchendo a lacuna entre o mundo físico e o digital de forma inovadora. Busco constantemente por desafios que me permitam aplicar esse conhecimento integrado para contribuir com o desenvolvimento de projetos robustos e inteligentes.
     </p>
   </section>
 
