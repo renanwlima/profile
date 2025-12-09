@@ -102,6 +102,8 @@ h2 {
   display: flex;
   flex-direction: column; /* Coloca os links um abaixo do outro */
   align-items: center; /* Centraliza os links */
+  list-style: none; /* Remove os marcadores (pontos) da lista */
+  padding: 0; /* Remove o padding padrão da lista para alinhar à esquerda */
   gap: 1rem;
 }
 
