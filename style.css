@@ -171,7 +171,13 @@ section:last-of-type {
   width: 100%;
   display: block;
   aspect-ratio: 16 / 10;
-  object-fit: cover;
+  object-fit: contain; /* Garante que a imagem inteira apareça sem cortes */
+  background-color: #f0f0f0; /* Adiciona um fundo claro para preencher o espaço vazio */
+}
+
+/* Ajusta o fundo da imagem para o tema escuro */
+.dark-mode .projeto img {
+  background-color: #2d3748; /* Um cinza escuro que combina com o tema */
 }
 
 .projeto h3 {
