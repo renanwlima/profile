@@ -170,7 +170,7 @@ section:last-of-type {
 .projeto img {
   width: 100%;
   display: block;
-  aspect-ratio: 1.85 / 1; /* Ajuste fino na proporção para reduzir o corte lateral */
+  aspect-ratio: 2 / 1; /* Deixa o contêiner da imagem mais baixo (mais largo em proporção) */
   object-fit: cover; /* Faz a imagem preencher o espaço, cortando o excesso */
 }
 
