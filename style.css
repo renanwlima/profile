@@ -170,7 +170,7 @@ section:last-of-type {
 .projeto img {
   width: 100%;
   display: block;
-  aspect-ratio: 2 / 1; /* Deixa o contêiner da imagem mais baixo (mais largo em proporção) */
+  aspect-ratio: 2.1 / 1; /* Ajuste fino para deixar o card um pouco mais baixo */
   object-fit: cover; /* Faz a imagem preencher o espaço, cortando o excesso */
 }
 
