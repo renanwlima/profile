@@ -268,9 +268,7 @@ section:last-of-type {
 .timeline {
   position: relative;
   padding-left: 2rem;
-  border-left: 2px solid var(--border-color);
   margin-left: 0.5rem;
-  transition: border-color 0.3s;
 }
 
 .timeline-item {
@@ -280,6 +278,18 @@ section:last-of-type {
 
 .timeline-item:last-child {
   margin-bottom: 0;
+}
+
+/* The vertical connector line, running from dot center to next dot center */
+.timeline-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: calc(-2rem - 2px);
+  top: calc(0.45rem + 8px);
+  height: calc(100% + 2.5rem);
+  width: 2px;
+  background-color: var(--border-color);
+  transition: background-color 0.3s;
 }
 
 .timeline-item::before {
