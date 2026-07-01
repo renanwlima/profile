@@ -5,246 +5,329 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <title>Renan Willian De Lima - Portfólio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="dark-mode">
 
-  <button id="theme-toggle" title="Alternar tema" aria-label="Alternar tema claro e escuro">☀️</button>
+  <!-- Background Blur Blobs -->
+  <div class="bg-glow-container">
+    <div class="bg-glow-blob bg-glow-blob-1"></div>
+    <div class="bg-glow-blob bg-glow-blob-2"></div>
+    <div class="bg-glow-blob bg-glow-blob-3"></div>
+  </div>
 
-  <div class="page-wrapper">
-    <!-- Barra Lateral Fixa -->
-    <aside class="sidebar">
-      <div class="sidebar-content">
-        <div class="profile">
-          <div class="avatar">RW</div>
-          <h1>Renan Willian De Lima</h1>
-          <p class="subtitle">Fld Svc Tech | Técnico em Mecatrônica | Automação, CFTV e Soluções de Segurança</p>
-        </div>
-        <nav class="sidebar-nav">
-          <ul>
+  <!-- Top Glassmorphic Navbar -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="#home" class="navbar-logo">Renan Willian</a>
+      <div class="navbar-menu-wrapper">
+        <nav>
+          <ul class="navbar-menu">
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#experiencia">Experiência</a></li>
             <li><a href="#formacao">Formação</a></li>
             <li><a href="#projetos">Projetos</a></li>
           </ul>
         </nav>
-        <ul class="contact-links">
-          <li>
-            <a href="mailto:contatorenanw@gmail.com" title="Email">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-              <span>contatorenanw@gmail.com</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/renanwlima" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-              <span>linkedin.com/in/renanwlima</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://wa.me/5542991193189" target="_blank" rel="noopener noreferrer" title="WhatsApp">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-              <span>+55 (42) 99119-3189</span>
-            </a>
-          </li>
-          <li class="contact-item" title="Localização">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span>Curitiba, PR, Brasil</span>
-          </li>
-        </ul>
+        <button id="theme-toggle" title="Alternar tema" aria-label="Alternar tema claro e escuro">☀️</button>
+        <button class="hamburger-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
       </div>
-    </aside>
+    </div>
+  </header>
 
-    <!-- Conteúdo Principal -->
+  <div class="page-wrapper">
     <main class="main-content">
-
-  <!-- Seção Sobre -->
-  <section id="sobre" class="container">
-    <h2>Sobre mim</h2>
-    <p>
-      Como Systems Technician II na Johnson Controls, atuo na otimização e implementação de sistemas críticos de automação predial e segurança eletrônica, como CFTV, SDAI e SCA, garantindo alta disponibilidade e eficiência para grandes operações.
-    </p>
-    <p>
-      Meu diferencial está na intersecção entre a manutenção de campo e o desenvolvimento de software. Com base técnica em Mecatrônica, expando minhas fronteiras através do curso técnico em Redes de Computadores e da graduação em Análise e Desenvolvimento de Sistemas (ADS). Essa bagagem me permite conectar com facilidade a infraestrutura física de hardware, as camadas de tráfego de dados e a arquitetura de aplicações.
-    </p>
-    <p>
-      Desenvolvo soluções de automação e painéis de gerenciamento utilizando stacks como Python, Node.js e React para transformar dados operacionais de campo em ferramentas visuais, relatórios automatizados e inteligência que apoiam a eficiência da operação.
-    </p>
-  </section>
-
-  <!-- Experiência -->
-  <section id="experiencia" class="container">
-    <h2>Experiência Profissional</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Systems Technician II</h3>
-        <p><strong>Johnson Controls</strong> | 2025 - Atual</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Systems Technician I</h3>
-        <p><strong>Johnson Controls</strong> | 2023 - 2025</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Assistente de Laboratório II</h3>
-        <p><strong>TECPUC</strong> | 2019 - 2022</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Assistente Técnico</h3>
-        <p><strong>Autônomo</strong> | 2017 - 2018</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Formação -->
-  <section id="formacao" class="container">
-    <h2>Formação Acadêmica</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>CST em Análise e Desenvolvimento de Sistemas</h3>
-        <p><strong>Estácio</strong> | Previsão de conclusão: 2027</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Técnico em Redes de Computadores</h3>
-        <p><strong>Unicorp</strong> | Previsão de conclusão: 2027</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Técnico em Mecatrônica</h3>
-        <p><strong>PUCPR</strong> | Concluído em 2023</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Seção Projetos -->
-  <section id="projetos" class="container">
-    <h2>Meus Projetos</h2>
-    <div class="projetos-grid">
-      <div class="projeto">
-        <div class="projeto-image-wrapper">
-          <img src="images/nexo.png" alt="Nexo - Painel de Demandas">
+      
+      <!-- Hero / Introduction Section -->
+      <section class="hero" id="home">
+        <div class="hero-avatar">RW</div>
+        <h1>Renan Willian De Lima</h1>
+        <p class="subtitle">Field Service Technician II | Técnico em Mecatrônica | Automação, CFTV, Redes & Software Developer</p>
+        <div class="hero-actions">
+          <a href="mailto:contatorenanw@gmail.com" title="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>E-mail</span>
+          </a>
+          <a href="https://www.linkedin.com/in/renanwlima" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://wa.me/5542991193189" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            <span>WhatsApp</span>
+          </a>
         </div>
-        <div class="projeto-body">
-          <h3>Nexo - Painel de Demandas</h3>
-          <div class="project-tags">
-            <span>HTML/CSS</span>
-            <span>PHP</span>
-            <span>JavaScript</span>
-            <span>Kanban</span>
+      </section>
+
+      <!-- Sobre Mim Section -->
+      <section id="sobre" class="container">
+        <h2>Sobre mim</h2>
+        <div class="sobre-grid">
+          <div class="sobre-info">
+            <div class="info-item">
+              <label>Localização</label>
+              <span>Curitiba, PR, Brasil</span>
+            </div>
+            <div class="info-item">
+              <label>Especialidades</label>
+              <span>Mecatrônica, Redes & Automação</span>
+            </div>
+            <div class="info-item">
+              <label>Desenvolvimento</label>
+              <span>Python, Node.js, React, PHP</span>
+            </div>
+            <div class="info-item">
+              <label>Atuação Atual</label>
+              <span>Systems Technician II (JCI)</span>
+            </div>
           </div>
-          <p>O Nexo é um sistema web centralizado de gestão de demandas e ordens de serviço, projetado para coordenar fluxos de trabalho operacionais, técnicos e de infraestrutura. A plataforma atua na organização de rotinas complexas e equipes de campo, permitindo a distribuição inteligente de tarefas por localidade, criticidade e responsáveis, garantindo total rastreabilidade operacional.</p>
-          <div class="projeto-features">
-            <h4>Módulos Inteligentes / Funcionalidades:</h4>
-            <ul>
-              <li><strong>Painel de Controle Operacional (Kanban):</strong> Visualização dinâmica e segmentada em colunas de triagem ("Caixa de Entrada", "Foco do Dia" e "Concluído") com classificação visual por cores para níveis de urgência e criticidade.</li>
-              <li><strong>Gestão Multiusuário e Delegação:</strong> Atribuição clara de responsáveis e equipes (Técnicos, Auxiliares, Estagiários) por atividade, facilitando o acompanhamento de demandas simultâneas.</li>
-              <li><strong>Rastreabilidade e Logística Predial:</strong> Organização de tarefas parametrizadas por ativos e unidades físicas específicas (sedes, salas técnicas, subsmatrix, barracões), centralizando históricos de manutenção e infraestrutura.</li>
-              <li><strong>Controle de Prazos e Alertas:</strong> Monitoramento visual de datas de criação e prazos de vencimento (SLA) para mitigar gargalos operacionais e otimizar o tempo de resposta em campo.</li>
-            </ul>
+          <div class="sobre-text">
+            <p>
+              Como Systems Technician II na Johnson Controls, atuo na otimização e implementação de sistemas críticos de automação predial e segurança eletrônica, como CFTV, SDAI e SCA, garantindo alta disponibilidade e eficiência para grandes operações.
+            </p>
+            <p>
+              Meu diferencial está na intersecção entre a manutenção de campo e o desenvolvimento de software. Com base técnica em Mecatrônica, expando minhas fronteiras através do curso técnico em Redes de Computadores e da graduação em Análise e Desenvolvimento de Sistemas (ADS). Essa bagagem me permite conectar com facilidade a infraestrutura física de hardware, as camadas de tráfego de dados e a arquitetura de aplicações.
+            </p>
+            <p>
+              Desenvolvo soluções de automação e painéis de gerenciamento utilizando stacks como Python, Node.js e React para transformar dados operacionais de campo em ferramentas visuais, relatórios automatizados e inteligência que apoiam a eficiência da operação.
+            </p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="projeto">
-        <div class="projeto-image-wrapper">
-          <img src="images/vendasmorango.png" alt="Sistema de Vendas e Recibos">
-        </div>
-        <div class="projeto-body">
-          <h3>Sistema de Vendas e Recibos</h3>
-          <div class="project-tags">
-            <span>HTML/CSS</span>
-            <span>JavaScript</span>
-            <span>Relatórios</span>
-            <span>PDV</span>
+      <!-- Experiência Profissional Section -->
+      <section id="experiencia" class="container">
+        <h2>Experiência Profissional</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-card">
+              <h3>Systems Technician II</h3>
+              <div class="company">Johnson Controls</div>
+              <div class="date">2025 - Atual</div>
+            </div>
           </div>
-          <p>Sistema para loja de morangos que registra pedidos, gerencia histórico e imprime recibos com dados do cliente e frete. Permite gerar relatórios de vendas personalizados por período, com detalhamento de itens e valor total.</p>
+          <div class="timeline-item">
+            <div class="timeline-card">
+              <h3>Systems Technician I</h3>
+              <div class="company">Johnson Controls</div>
+              <div class="date">2023 - 2025</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-card">
+              <h3>Assistente de Laboratório II</h3>
+              <div class="company">TECPUC</div>
+              <div class="date">2019 - 2022</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-card">
+              <h3>Assistente Técnico</h3>
+              <div class="company">Autônomo</div>
+              <div class="date">2017 - 2018</div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="projeto">
-        <div class="projeto-image-wrapper">
-          <img src="images/roxix.png" alt="Roxix - Sistema de Gestão">
-        </div>
-        <div class="projeto-body">
-          <h3>Roxix - Sistema de Gestão</h3>
-          <div class="project-tags">
-            <span>UX/UI</span>
-            <span>BaaS</span>
-            <span>Real-Time</span>
-            <span>PDV</span>
+      <!-- Formação Acadêmica Section -->
+      <section id="formacao" class="container">
+        <h2>Formação Acadêmica</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-card">
+              <h3>CST em Análise e Desenvolvimento de Sistemas</h3>
+              <div class="company">Estácio</div>
+              <div class="date">Previsão de conclusão: 2027</div>
+            </div>
           </div>
-          <p>Desenvolvimento de uma solução completa de Ponto de Venda (PDV) concebida especificamente para otimizar as operações em açaíterias e comércios de resposta rápida. O foco deste software foi traduzir lógicas de negócio complexas numa ferramenta de utilização extremamente intuitiva para o balcão.</p>
-          <div class="projeto-features">
-            <h4>Arquitetura e Implementação:</h4>
-            <ul>
-              <li><strong>Interface Dinâmica e Ágil:</strong> Criação de uma interface de utilizador (UX/UI) focada na velocidade de operação, desenhada para acelerar o registo de pedidos e minimizar o tempo de espera dos clientes.</li>
-              <li><strong>Engenharia de Produto Customizada:</strong> Programação de módulos estruturados para suportar as variáveis exclusivas da venda de açaí e cupuaçu, calculando dinamicamente tamanhos, pesagens e o controlo de acompanhamentos extra.</li>
-              <li><strong>Sincronização Operacional:</strong> Desenvolvimento de um sistema de acompanhamento de estado em tempo real, conectando diretamente a frente de loja com a área de preparação e assegurando a rastreabilidade total do fluxo de trabalho.</li>
-              <li><strong>Infraestrutura de Dados Comercial:</strong> Integração com serviços de backend (BaaS) para o armazenamento seguro e relacional, garantindo a estabilidade do sistema em horários de pico e a integridade das transações financeiras.</li>
-            </ul>
+          <div class="timeline-item">
+            <div class="timeline-card">
+              <h3>Técnico em Redes de Computadores</h3>
+              <div class="company">Unicorp</div>
+              <div class="date">Previsão de conclusão: 2027</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-card">
+              <h3>Técnico em Mecatrônica</h3>
+              <div class="company">PUCPR</div>
+              <div class="date">Concluído em 2023</div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="projeto">
-        <div class="projeto-image-wrapper">
-          <img src="images/zalio.png" alt="Zalio - Dashboard Financeiro">
-        </div>
-        <div class="projeto-body">
-          <h3>Zalio - Dashboard Financeiro</h3>
-          <div class="project-tags">
-            <span>React</span>
-            <span>TypeScript</span>
-            <span>Supabase</span>
-            <span>Auth0</span>
-            <span>PostgreSQL</span>
+      <!-- Projetos Section -->
+      <section id="projetos" class="container">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-grid">
+          <div class="projeto">
+            <div class="projeto-image-wrapper">
+              <img src="images/nexo.png" alt="Nexo - Painel de Demandas">
+            </div>
+            <div class="projeto-body">
+              <h3>Nexo - Painel de Demandas</h3>
+              <div class="project-tags">
+                <span>HTML/CSS</span>
+                <span>PHP</span>
+                <span>JavaScript</span>
+                <span>Kanban</span>
+              </div>
+              <p>O Nexo é um sistema web centralizado de gestão de demandas e ordens de serviço, projetado para coordenar fluxos de trabalho operacionais, técnicos e de infraestrutura. A plataforma atua na organização de rotinas complexas e equipes de campo, permitindo a distribuição inteligente de tarefas por localidade, criticidade e responsáveis, garantindo total rastreabilidade operacional.</p>
+              <button class="btn-ver-mais" aria-label="Ver mais sobre o projeto">
+                <span>Ver mais</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+              <div class="projeto-features">
+                <h4>Módulos Inteligentes / Funcionalidades:</h4>
+                <ul>
+                  <li><strong>Painel de Controle Operacional (Kanban):</strong> Visualização dinâmica e segmentada em colunas de triagem ("Caixa de Entrada", "Foco do Dia" e "Concluído") com classificação visual por cores para níveis de urgência e criticidade.</li>
+                  <li><strong>Gestão Multiusuário e Delegação:</strong> Atribuição clara de responsáveis e equipes (Técnicos, Auxiliares, Estagiários) por atividade, facilitando o acompanhamento de demandas simultâneas.</li>
+                  <li><strong>Rastreabilidade e Logística Predial:</strong> Organização de tarefas parametrizadas por ativos e unidades físicas específicas (sedes, salas técnicas, subsmatrix, barracões), centralizando históricos de manutenção e infraestrutura.</li>
+                  <li><strong>Controle de Prazos e Alertas:</strong> Monitoramento visual de datas de criação e prazos de vencimento (SLA) para mitigar gargalos operacionais e otimizar o tempo de resposta em campo.</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <p>O Zalio é uma plataforma robusta de gerenciamento financeiro pessoal desenvolvida para centralizar, automatizar e simplificar o controle orçamentário diário. O projeto foi projetado com foco em alta performance, escalabilidade e segurança de dados rigorosa.</p>
-          <div class="projeto-features">
-            <h4>Principais destaques técnicos e funcionalidades:</h4>
-            <ul>
-              <li><strong>Frontend Reativo:</strong> Construído em React com TypeScript, priorizando componentização, experiência do usuário (UX) e uma interface adaptável com suporte a modos visuais customizados.</li>
-              <li><strong>Backend-as-a-Service (BaaS):</strong> Integração com o Supabase utilizando PostgreSQL para persistência, estruturação de dados relacionais e sincronização em tempo real.</li>
-              <li><strong>Segurança e Identidade:</strong> Implementação completa de fluxos de autenticação, autorização e proteção de dados financeiros utilizando a plataforma Auth0 com validação de tokens JWT.</li>
-              <li><strong>Módulos Inteligentes:</strong> Desenvolvimento de dashboards analíticos com gráficos reativos por categoria, controle de despesas fixas recorrentes, histórico de lançamentos e gerenciador visual de metas ("Cofrinhos").</li>
-            </ul>
-          </div>
-        </div>
-      </div>
 
-      <div class="projeto">
-        <div class="projeto-image-wrapper">
-          <img src="images/velozi.png" alt="Velozi - Sistema de Gestão Operacional e Fluxo">
-        </div>
-        <div class="projeto-body">
-          <h3>Velozi - Sistema de Gestão Operacional e Fluxo</h3>
-          <div class="project-tags">
-            <span>Automação</span>
-            <span>Fluxo de Caixa</span>
-            <span>Regras de Negócio</span>
-            <span>PostgreSQL</span>
+          <div class="projeto">
+            <div class="projeto-image-wrapper">
+              <img src="images/vendasmorango.png" alt="Sistema de Vendas e Recibos">
+            </div>
+            <div class="projeto-body">
+              <h3>Sistema de Vendas e Recibos</h3>
+              <div class="project-tags">
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+                <span>Relatórios</span>
+                <span>PDV</span>
+              </div>
+              <p>Sistema para loja de morangos que registra pedidos, gerencia histórico e imprime recibos com dados do cliente e frete. Permite gerar relatórios de vendas personalizados por período, com detalhamento de itens e valor total.</p>
+              <button class="btn-ver-mais" aria-label="Ver mais sobre o projeto">
+                <span>Ver mais</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
           </div>
-          <p>Desenvolvimento de uma plataforma de gerenciamento operacional e controle de fluxo projetada especificamente para otimizar a rotina de lavatórios automotivos e centros de estética automotiva. O foco do software é centralizar o controle de entrada e saída de veículos, organizando as etapas de atendimento para eliminar gargalos e aumentar a produtividade da equipe.</p>
-          <div class="projeto-features">
-            <h4>Arquitetura e Implementação:</h4>
-            <ul>
-              <li><strong>Controle de Fluxo e Fila (Estante de Status):</strong> Implementação de uma lógica de esteira de produção para acompanhar o status em tempo real de cada veículo (Aguardando, Em Lavagem, Acabamento, Concluído), otimizando o tempo de pátio e a distribuição de tarefas.</li>
-              <li><strong>Interface Operacional Dinâmica:</strong> Criação de um front-end focado na agilidade do operador, permitindo a realização rápida do checklist de entrada, cadastro da placa e seleção de pacotes de serviços diretamente no balcão ou pátio.</li>
-              <li><strong>Engine de Serviços Customizável:</strong> Desenvolvimento de regras de negócio para gerenciar a precificação e o tempo estimado com base na categoria do veículo (Passeio, SUV, Moto) e na combinação de serviços aplicados (lavagem simples, higienização interna, polimento ou cera).</li>
-              <li><strong>Histórico e Persistência de Dados:</strong> Integração com arquitetura de banco de dados relacional para o armazenamento seguro de ordens de serviço e histórico por veículo, permitindo o controle financeiro das transações e fornecendo dados para a fidelização de clientes.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Rodapé -->
-  <footer>
-    <p>&copy; 2026 - Renan Willian De Lima</p>
-  </footer>
+          <div class="projeto">
+            <div class="projeto-image-wrapper">
+              <img src="images/roxix.png" alt="Roxix - Sistema de Gestão">
+            </div>
+            <div class="projeto-body">
+              <h3>Roxix - Sistema de Gestão</h3>
+              <div class="project-tags">
+                <span>UX/UI</span>
+                <span>BaaS</span>
+                <span>Real-Time</span>
+                <span>PDV</span>
+              </div>
+              <p>Desenvolvimento de uma solução completa de Ponto de Venda (PDV) concebida especificamente para otimizar as operações em açaíterias e comércios de resposta rápida. O foco deste software foi traduzir lógicas de negócio complexas numa ferramenta de utilização extremamente intuitiva para o balcão.</p>
+              <button class="btn-ver-mais" aria-label="Ver mais sobre o projeto">
+                <span>Ver mais</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+              <div class="projeto-features">
+                <h4>Arquitetura e Implementação:</h4>
+                <ul>
+                  <li><strong>Interface Dinâmica e Ágil:</strong> Criação de uma interface de utilizador (UX/UI) focada na velocidade de operação, desenhada para acelerar o registo de pedidos e minimizar o tempo de espera dos clientes.</li>
+                  <li><strong>Engenharia de Produto Customizada:</strong> Programação de módulos estruturados para suportar as variáveis exclusivas da venda de açaí e cupuaçu, calculando dinamicamente tamanhos, pesagens e o controlo de acompanhamentos extra.</li>
+                  <li><strong>Sincronização Operacional:</strong> Desenvolvimento de um sistema de acompanhamento de estado em tempo real, conectando diretamente a frente de loja com a área de preparação e assegurando a rastreabilidade total do fluxo de trabalho.</li>
+                  <li><strong>Infraestrutura de Dados Comercial:</strong> Integração com serviços de backend (BaaS) para o armazenamento seguro e relacional, garantindo a estabilidade do sistema em horários de pico e a integridade das transações financeiras.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="projeto">
+            <div class="projeto-image-wrapper">
+              <img src="images/velozi.png" alt="Velozi - Sistema de Gestão Operacional e Fluxo">
+            </div>
+            <div class="projeto-body">
+              <h3>Velozi - Sistema de Gestão Operacional e Fluxo</h3>
+              <div class="project-tags">
+                <span>UX/UI</span>
+                <span>BaaS</span>
+                <span>Real-Time</span>
+                <span>PDV</span>
+              </div>
+              <p>Desenvolvimento de uma plataforma de gerenciamento operational e controle de fluxo projetada especificamente para otimizar a rotina de lavatórios automotivos e centros de estética automotiva. O foco do software é centralizar o controle de entrada e saída de veículos, organizando as etapas de atendimento para eliminar gargalos e aumentar a produtividade da equipe.</p>
+              <button class="btn-ver-mais" aria-label="Ver mais sobre o projeto">
+                <span>Ver mais</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+              <div class="projeto-features">
+                <h4>Arquitetura e Implementação:</h4>
+                <ul>
+                  <li><strong>Controle de Fluxo e Fila (Estante de Status):</strong> Implementação de uma lógica de esteira de produção para acompanhar o status em tempo real de cada veículo (Aguardando, Em Lavagem, Acabamento, Concluído), otimizando o tempo de pátio e a distribuição de tarefas.</li>
+                  <li><strong>Interface Operacional Dinâmica:</strong> Criação de um front-end focado na agilidade do operador, permitindo a realização rápida do checklist de entrada, cadastro da placa e seleção de pacotes de serviços diretamente no balcão ou pátio.</li>
+                  <li><strong>Engine de Serviços Customizável:</strong> Desenvolvimento de regras de negócio para gerenciar a precificação e o tempo estimado com base na categoria do veículo (Passeio, SUV, Moto) e na combinação de serviços aplicados (lavagem simples, higienização interna, polimento ou cera).</li>
+                  <li><strong>Histórico e Persistência de Dados:</strong> Integração com arquitetura de banco de dados relacional para o armazenamento seguro de ordens de serviço e histórico por veículo, permitindo o controle financeiro das transações e fornecendo dados para a fidelização de clientes.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="projeto">
+            <div class="projeto-image-wrapper">
+              <img src="images/zalio.png" alt="Zalio - Dashboard Financeiro">
+            </div>
+            <div class="projeto-body">
+              <h3>Zalio - Dashboard Financeiro</h3>
+              <div class="project-tags">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Supabase</span>
+                <span>Auth0</span>
+                <span>PostgreSQL</span>
+              </div>
+              <p>O Zalio é uma plataforma robusta de gerenciamento financeiro pessoal desenvolvida para centralizar, automatizar e simplificar o controle orçamentário diário. O projeto foi projetado com foco em alta performance, escalabilidade e segurança de dados rigorosa.</p>
+              <button class="btn-ver-mais" aria-label="Ver mais sobre o projeto">
+                <span>Ver mais</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+              <div class="projeto-features">
+                <h4>Principais destaques técnicos e funcionalidades:</h4>
+                <ul>
+                  <li><strong>Frontend Reativo:</strong> Construído em React com TypeScript, priorizando componentização, experiência do usuário (UX) e uma interface adaptável com suporte a modos visuais customizados.</li>
+                  <li><strong>Backend-as-a-Service (BaaS):</strong> Integração com o Supabase utilizando PostgreSQL para persistência, estruturação de dados relacionais e sincronização em tempo real.</li>
+                  <li><strong>Segurança e Identidade:</strong> Implementação completa de fluxos de autenticação, autorização e proteção de dados financeiros utilizando a plataforma Auth0 com validação de tokens JWT.</li>
+                  <li><strong>Módulos Inteligentes:</strong> Desenvolvimento de dashboards analíticos com gráficos reativos por categoria, controle de despesas fixas recorrentes, histórico de lançamentos e gerenciador visual de metas ("Cofrinhos").</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer>
+        <p>&copy; 2026 - Renan Willian De Lima. Todos os direitos reservados.</p>
+      </footer>
 
     </main>
+  </div>
+
+  <!-- Project Details Modal -->
+  <div id="project-modal" class="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-container">
+      <button class="modal-close" aria-label="Fechar modal">&times;</button>
+      <div class="modal-content">
+        <div class="modal-scroll-area">
+          <div class="modal-body">
+            <!-- O conteúdo será injetado dinamicamente via JS -->
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
