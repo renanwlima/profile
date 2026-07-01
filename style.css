@@ -167,24 +167,91 @@ section:last-of-type {
   overflow: hidden;
 }
 
-.projeto img {
-  width: 100%;
-  display: block;
-  aspect-ratio: 2.1 / 1; /* Ajuste fino para deixar o card um pouco mais baixo */
-  object-fit: cover; /* Faz a imagem preencher o espaço, cortando o excesso */
+.projeto-image-wrapper {
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 16 / 9;
 }
 
-/* Ajusta o fundo da imagem para o tema escuro */
-.dark-mode .projeto img { }
+.projeto img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.projeto:hover img {
+  transform: scale(1.05);
+}
+
+/* Card Body and Content Styling */
+.projeto-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
 
 .projeto h3 {
   font-family: 'Poppins', sans-serif;
-  margin: 1rem 1.5rem 0.5rem;
+  margin: 0 0 0.75rem 0;
+  font-size: 1.35rem;
+  color: var(--main-text-color);
 }
 
 .projeto p {
-  margin: 0 1.5rem 1.5rem;
+  margin: 0 0 1.25rem 0;
   color: var(--secondary-text-color);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.projeto-features {
+  margin-top: 0.5rem;
+  border-top: 1px dashed var(--border-color);
+  padding-top: 1.25rem;
+}
+
+.projeto-features h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  margin: 0 0 0.75rem 0;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.projeto-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.projeto-features li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+/* Bullet points using accents */
+.projeto-features li::before {
+  content: "•";
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+  top: -1px;
+}
+
+.projeto-features li strong {
+  color: var(--main-text-color);
 }
 
 .projeto:hover {
