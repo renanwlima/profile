@@ -471,7 +471,7 @@ body.dark-mode #theme-toggle {
   content: '';
   position: absolute;
   left: calc(-2rem - 2px);
-  top: 50%;
+  top: 2rem;
   height: calc(100% + 2rem);
   width: 2px;
   background-color: var(--border-color);
@@ -482,7 +482,7 @@ body.dark-mode #theme-toggle {
   content: '';
   position: absolute;
   left: calc(-2rem - 6px);
-  top: 50%;
+  top: 2rem;
   transform: translateY(-50%);
   width: 10px;
   height: 10px;
